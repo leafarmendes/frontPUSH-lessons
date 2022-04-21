@@ -1,0 +1,46 @@
+*{
+    padding: 0; /* espaçamento interno */
+    margin: 0; /* espaçamento externo */
+    box-sizing: border-box; /* faz com que o conteúdo dentro da div/box não altere o tamanho da box em si. Ele se adapte ao tamanho fixo da box. */
+    font-family: sans-serif;
+}
+
+body{
+    background: #1a1a1a;
+}
+
+.container{
+    max-width: 700px;
+    height: 700px;
+
+    margin: 0 auto;
+    
+    border: 5px solid white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* alinha na horizontal os elementos */
+    flex-wrap: wrap; /* Aceita os objetos quebrarem, tornando responsivo. */
+   
+    /*
+    align-items: center; /* alinha na vertical os elementos */
+    /*align-content: center; /* Alinha as linhas do container em relação ao eixo vertical. Só funciona com flex-itens. No caso, flex-wrap precisa ser wrap.*/
+    
+}
+
+
+
+.item{
+   /* padding: 20px;*/
+    margin: 5px;
+    max-height: 50px;
+    background-color: #ccc;
+
+    flex: 1 1 150px;
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: 0; */
+
+    /*flex-grow: 0;  Define a habilidade de um flex item de crescer. Valor padrão: 0 */
+    /*flex-basis: auto;  Indica o tamanho inicial do flex item antes da distribuição do espaço. Valor padrão: auto */
+
+    text-align: center;
+}
