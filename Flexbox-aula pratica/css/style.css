@@ -152,3 +152,9 @@ p{
 
     margin-left: 8px;
 }
+
+.thumb-description{
+    flex: 1 1 auto;
+
+    margin-left: 8px;
+}
